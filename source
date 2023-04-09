@@ -899,7 +899,7 @@ function Library:create(options)
 
 	creditsTab:credit{Name = "Aezdek", Description = "Owner / Developer", Discord = "Aezdek#0001", V3rmillion = "Aezdek"}
 	creditsTab:credit{Name = "Icy", Description = "Owner / Developer", Discord = "Icy#0002"}
-	creditsTab:credit{Name = "Discord Server", Description = "Made with ❤️ by Aez", Discord="https://discord.gg/Revoult"}
+	creditsTab:credit{Name = "Discord Server", Description = "Made with love by icy", Discord="https://discord.gg/Revoult"}
 
 	return mt
 end
