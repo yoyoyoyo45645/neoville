@@ -922,7 +922,7 @@ function Library:create(options)
 
 	creditsTab:credit{Name = "Aezdek", Description = "Owner / Developer", Discord = "Aezdek#0001", V3rmillion = "Aezdek"}
 	creditsTab:credit{Name = "Icy", Description = "Owner / Developer", Discord = "Icy#0002"}
-	creditsTab:credit{Name = "Mercury Lib Devs", Description = "UI Library Repository", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
+	creditsTab:credit{Name = "Discord.gg/Revoult", Description = "UI Library Repository", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
 
 	return mt
 end
