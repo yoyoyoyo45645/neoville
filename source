@@ -435,7 +435,7 @@ function Library:create(options)
 		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "https://raw.githubusercontent.com/yoyoyoyo45645/neoville/main/source"
+		Link = "https://github.com/deeeity/mercury-lib"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
@@ -599,7 +599,8 @@ function Library:create(options)
 	local urlBar = core:object("Frame", {
 		Size = UDim2.new(1, -10, 0, 25),
 		Position = UDim2.new(0, 5,0, 35),
-		Theme = {BackgroundColor3 = "Secondary"}
+		Theme = {BackgroundColor3 = "Secondary"},
+		Visible = false
 	}):round(5)
 
 	local searchIcon = urlBar:object("ImageLabel", {
@@ -649,7 +650,7 @@ function Library:create(options)
 		Theme = {BackgroundColor3 = {"Secondary", -10}},
 		AnchorPoint = Vector2.new(0.5, 1),
 		Position = UDim2.new(0.5, 0, 1, -20),
-		Size = UDim2.new(1, -10, 1, -86)
+		Size = UDim2.new(1, -10, 1, -56)
 	}):round(7) -- Sept
 
 	local status = core:object("TextLabel", {
@@ -921,7 +922,7 @@ function Library:create(options)
 
 	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
 	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
-	creditsTab:credit{Name = "Repository", Description = "UI Library Repository", Github="://github.com/deeeity/mercury-lib/blob/master/src.lua"}
+	creditsTab:credit{Name = "Repository", Description = "UI Library Repository", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
 
 	return mt
 end
@@ -2768,11 +2769,11 @@ function Library:credit(options)
 			TextXAlignment = Enum.TextXAlignment.Left
 		})
 	end
-	
-	
+
+
 
 	if setclipboard then
-	
+
 		if options.Github then
 			local githubContainer = creditContainer:object("TextButton", {
 				AnchorPoint = Vector2.new(1, 1),
@@ -2791,7 +2792,7 @@ function Library:credit(options)
 				setclipboard(options.Github)
 			end)
 		end
-	
+
 		if options.Discord then
 			local discordContainer = creditContainer:object("TextButton", {
 				AnchorPoint = Vector2.new(1, 1),
